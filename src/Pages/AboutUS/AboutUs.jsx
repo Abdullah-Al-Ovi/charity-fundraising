@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const AboutUs = () => {
   const sections = [
@@ -7,7 +7,7 @@ const AboutUs = () => {
       content: (
         <>
           <p>
-            At [Your Organization’s Name], we believe in the power of community
+            At Farjana&apos;s Charity, we believe in the power of community
             and the potential for every individual to make a difference. Our
             mission is to:
           </p>
@@ -97,7 +97,7 @@ const AboutUs = () => {
           </p>
           <ul className="mt-2">
             <li>
-              <strong>Email:</strong> farjana&apos;scharity@gmail.com
+              <strong>Email:</strong> contact@farjanascharity.com
             </li>
             <li>
               <strong>Phone:</strong> +8801745281921
@@ -106,7 +106,7 @@ const AboutUs = () => {
               <strong>Address:</strong> Barishal Sadar, Barishal
             </li>
             <li>
-              <strong>Website:</strong> farjana&apos;scharity.org
+              <strong>Website:</strong> farjanascharity.org
             </li>
            
           </ul>
@@ -123,29 +123,29 @@ const AboutUs = () => {
         </h1>
         <div className="grid grid-cols-3 gap-6">
           {/* First row: 2 cards, second card spans 2 columns */}
-          <div className="bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-110">
-            <h2 className="text-2xl text-center font-semibold text-gray-800 mb-4">
+          <div className="bg-gray-100 shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-110">
+            <h2 className="text-2xl text-center font-semibold text-black mb-4">
               {sections[0].title}
             </h2>
-            <div className="text-gray-700">{sections[0].content}</div>
+            <div className="text-black">{sections[0].content}</div>
           </div>
-          <div className="bg-white shadow-md rounded-lg p-6 col-span-2 transform transition-transform duration-300 hover:scale-110">
-            <h2 className="text-2xl text-center font-semibold text-gray-800 mb-4">
+          <div className="bg-gray-100 shadow-md rounded-lg p-6 col-span-2 transform transition-transform duration-300 hover:scale-110">
+            <h2 className="text-2xl text-center font-semibold text-black mb-4">
               {sections[1].title}
             </h2>
-            <div className="text-gray-700">{sections[1].content}</div>
+            <div className="text-black">{sections[1].content}</div>
           </div>
 
           {/* Second row: 3 cards */}
           {sections.slice(2).map((section, index) => (
             <div
               key={index}
-              className="bg-white shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-110"
+              className="bg-gray-100 shadow-md rounded-lg p-6 transform transition-transform duration-300 hover:scale-110"
             >
-              <h2 className="text-2xl font-semibold text-center text-gray-800 mb-4">
+              <h2 className="text-2xl font-semibold text-center text-black mb-4">
                 {section.title}
               </h2>
-              <div className="text-gray-700">{section.content}</div>
+              <div className="text-black">{section.content}</div>
             </div>
           ))}
         </div>

@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "question": "What is Farjana's Charity?",
+      "answer": "Farjana's Charity is a non-profit organization dedicated to providing support and resources to those in need, focusing on education, healthcare, poverty alleviation, and disaster relief."
+    },
+    {
+      "id": 2,
+      "question": "How can I contribute to the charity?",
+      "answer": "You can contribute by donating money, volunteering your time, or supporting our various campaigns and initiatives aimed at helping those in need."
+    },
+    {
+      "id": 3,
+      "question": "Is my donation tax-deductible?",
+      "answer": "Yes, donations made to Farjana's Charity are tax-deductible, and you will receive a receipt for your contribution for tax purposes."
+    },
+    {
+      "id": 4,
+      "question": "How does the charity ensure the funds are used effectively?",
+      "answer": "Farjana's Charity follows strict financial protocols and transparency measures to ensure that all donations are used efficiently in line with our mission and goals."
+    },
+    {
+      "id": 5,
+      "question": "Can I volunteer with the charity?",
+      "answer": "Yes, we welcome volunteers to help with various tasks. You can apply through our website or contact us directly to learn more about volunteer opportunities."
+    },
+    {
+      "id": 6,
+      "question": "Where can I find more information about upcoming events?",
+      "answer": "You can find information about upcoming events on our website or follow us on social media to stay updated on our latest activities and initiatives."
+    }
+  ]
+  

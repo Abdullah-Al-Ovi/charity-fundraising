@@ -1,9 +1,14 @@
-import React from 'react';
+
+import Banner from './Banner';
+import Faq from './FAQ';
+import HeroSection from './HeroSection';
 
 const Home = () => {
     return (
-        <div className='font-bold text-2xl'>
-           This is Home 
+        <div>
+           <Banner/>
+           <HeroSection></HeroSection>
+           <Faq></Faq>
         </div>
     );
 };

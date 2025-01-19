@@ -3,6 +3,10 @@ import Root from "../Root/Root";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import AboutUs from "../Pages/AboutUS/AboutUs";
+import { Contact } from "../Pages/Contact/Contact";
+import Donate from "../Pages/Donate/Donate";
+import Gallery from "../Pages/Gallery/Gallery";
+import Video from "../Pages/Video/Video";
 
 const Routes =createBrowserRouter([
     {
@@ -17,7 +21,24 @@ const Routes =createBrowserRouter([
             {
                 path:'/about',
                 element:<AboutUs></AboutUs>
+            },
+            {
+                path:'/contact',
+                element:<Contact></Contact>
+            },
+            {
+                path:"/donate",
+                element:<Donate></Donate>
+            },
+            {
+                path:"/gallery",
+                element:<Gallery></Gallery>
+            },
+            {
+                path:"/video",
+                element:<Video></Video>
             }
+            
         ]
     }
 ]);

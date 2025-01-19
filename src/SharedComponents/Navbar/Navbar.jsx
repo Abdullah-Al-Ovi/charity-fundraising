@@ -26,8 +26,8 @@ const Navbar = () => {
   );
 
   return (
-    <div className="max-w-[1000px] mx-auto sticky top-0 z-50 bg-white">
-      <div className="navbar border-[1px] shadow-xl">
+    <div className="max-w-[1000px]   mx-auto ">
+      <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -56,7 +56,11 @@ const Navbar = () => {
           <Link to="/">
             <img className="w-[70px] h-[70px] rounded-full" src={logo} alt="" />
           </Link>
-          <span className="ml-5 text-lg font-bold">Farjana&apos;s Charity</span>
+          <Link to="/">
+            <span className="ml-5 text-lg font-bold">
+              Farjana&apos;s Charity
+            </span>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{routes}</ul>
