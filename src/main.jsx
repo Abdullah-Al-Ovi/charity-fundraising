@@ -5,11 +5,12 @@ import {
 } from "react-router-dom";
 import './index.css'
 import Routes from './Routes/Routes.jsx';
+import  { Toaster } from 'react-hot-toast';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={Routes}>
-     
+    <Toaster position="top-center" />
     </RouterProvider>
   </StrictMode>,
 )

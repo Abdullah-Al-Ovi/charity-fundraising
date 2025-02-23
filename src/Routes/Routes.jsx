@@ -7,6 +7,7 @@ import { Contact } from "../Pages/Contact/Contact";
 import Donate from "../Pages/Donate/Donate";
 import Gallery from "../Pages/Gallery/Gallery";
 import Video from "../Pages/Video/Video";
+import CategoryWiseDonations from "../Pages/CategoryWiseDonations/CategoryWiseDonations";
 
 const Routes =createBrowserRouter([
     {
@@ -37,7 +38,12 @@ const Routes =createBrowserRouter([
             {
                 path:"/video",
                 element:<Video></Video>
+            },
+            {
+                path:"/categories/:category",
+                element:<CategoryWiseDonations/>
             }
+            
             
         ]
     }
