@@ -91,6 +91,9 @@ const DonationDetails = () => {
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
             {donation.title}
           </h1>
+          <h1 className="text-2xl font-semibold text-gray-800 mb-4">
+            {donation.category}
+          </h1>
           <p className="text-lg text-gray-600 mb-4 break-words">{donation.description}</p>
 
           <p className="text-lg font-semibold">

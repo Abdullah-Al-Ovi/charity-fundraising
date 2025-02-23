@@ -15,6 +15,7 @@ import UpdateDonation from "../Pages/Dashboard/UpdateDonation";
 import AllDonations from "../Pages/Dashboard/AllDonations";
 import AllPayments from "../Pages/Dashboard/AllPayments";
 import SingleDonation from "../Pages/Dashboard/SingleDonation";
+import Welcome from "../Pages/Dashboard/Welcome";
 
 const Routes = createBrowserRouter([
   {
@@ -60,6 +61,10 @@ const Routes = createBrowserRouter([
     path: "dashboard",
     element: <Dashboard />,
     children: [
+      {
+        path:"/dashboard",
+        element:<Welcome/>
+      },
       {
         path: "addDonation",
         element: <AddDonation />
