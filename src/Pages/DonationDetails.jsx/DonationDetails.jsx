@@ -91,15 +91,12 @@ const DonationDetails = () => {
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
             {donation.title}
           </h1>
-          <p className="text-lg text-gray-600 mb-4">{donation.description}</p>
+          <p className="text-lg text-gray-600 mb-4 break-words">{donation.description}</p>
+
           <p className="text-lg font-semibold">
             <span className="text-gray-700">Status:</span>{" "}
             <span
-              className={`px-3 py-1 rounded-lg text-white ${
-                donation.status === "running"
-                  ? "bg-green-500"
-                  : "bg-red-500"
-              }`}
+              className={`px-3 py-1 rounded-lg ${donation?.status === 'running' ? 'bg-green-200 text-green-800' : donation?.status === 'closed' ? 'bg-red-200 text-red-800' : 'bg-yellow-200 text-yellow-800'}`}
             >
               {donation.status}
             </span>
@@ -108,6 +105,7 @@ const DonationDetails = () => {
           {/* Donate Now Button */}
           <button
             className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition"
+            disabled={donation.status === "closed" || donation.status === "upcoming" || isSubmitting}
             onClick={() => document.getElementById("donation_modal").showModal()}
           >
             Donate Now
