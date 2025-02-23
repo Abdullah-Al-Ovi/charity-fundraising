@@ -8,6 +8,7 @@ import Donate from "../Pages/Donate/Donate";
 import Gallery from "../Pages/Gallery/Gallery";
 import Video from "../Pages/Video/Video";
 import CategoryWiseDonations from "../Pages/CategoryWiseDonations/CategoryWiseDonations";
+import DonationDetails from "../Pages/DonationDetails.jsx/DonationDetails";
 
 const Routes =createBrowserRouter([
     {
@@ -42,6 +43,10 @@ const Routes =createBrowserRouter([
             {
                 path:"/categories/:category",
                 element:<CategoryWiseDonations/>
+            },
+            {
+                path:"/donations/:id",
+                element:<DonationDetails/>
             }
             
             
